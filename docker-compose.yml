@@ -1,0 +1,12 @@
+version: '3.8'
+services:
+  victima-web:
+    image: nickvth/phpunit-rce
+    ports:
+      - "8080:80"
+    networks:
+      - red-seminario
+
+networks:
+  red-seminario:
+    driver: bridge
